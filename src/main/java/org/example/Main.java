@@ -9,7 +9,7 @@ public class Main {
 //        inputs = Exercise2.getUserInput();
 //        System.out.println(Exercise1.divide(inputs[0], inputs[1]));
 
-        Exercise3.divide();
+        Exercise4.recursiveMethod();
 
     }
 
