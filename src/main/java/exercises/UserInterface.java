@@ -27,8 +27,7 @@ public class UserInterface {
         promptUserForHeight();
         promptUserForWeight();
         promptUserForEmployment();
-        promptUserForOccupation();
-        promptUserForEmployment();
+
 
         return new HealthUser(this.name, this.age, this.height, this.weight, this.status, this.occupation);
     }
@@ -155,20 +154,17 @@ public class UserInterface {
     }
 
     private void revalidateAge() {
-        System.out.println("Do you want to re-enter your age? (Y to continue, anything else to pass)");
+//        System.out.println("Do you want to re-enter your age? (Y to continue, anything else to pass)");
         if (scanner.nextLine().equals("Y")) {
             promptUserForAge();
         }
     }
 
     private void promptUserForOccupation() {
-        while (true) {
-            System.out.print("What is your occupation?: ");
-            String occupation = scanner.nextLine();
-            if (occupation.isBlank()) continue;
-            this.occupation = occupation;
-            break;
-        }
+        scanner.nextLine();
+        System.out.println("What is your occupation?: ");
+        String occupation = scanner.nextLine();
+        this.occupation = occupation;
     }
 
     private void promptUserForStudentStatus() {

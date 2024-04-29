@@ -11,6 +11,13 @@ public class Exercise5 {
 
         UserInterface ui = new UserInterface(scanner);
         HealthUser hu = ui.createUser();
+
+        System.out.println(hu.getName());
+        System.out.println(hu.getAge());
+        System.out.println(hu.getHeightInMetres());
+        System.out.println(hu.getWeightInKG());
+        System.out.println(hu.getEmploymentStatus());
+        System.out.println(hu.getOccupation());
 //
 //        System.out.println("\n--- Thank you for choosing Blummin Health insurance! ---\n");
 //        System.out.println("Please input your data:");
