@@ -12,49 +12,11 @@ public class Exercise5 {
         UserInterface ui = new UserInterface(scanner);
         HealthUser hu = ui.createUser();
 
-        System.out.println(hu.getName());
-        System.out.println(hu.getAge());
-        System.out.println(hu.getHeightInMetres());
-        System.out.println(hu.getWeightInKG());
-        System.out.println(hu.getEmploymentStatus());
-        System.out.println(hu.getOccupation());
-//
-//        System.out.println("\n--- Thank you for choosing Blummin Health insurance! ---\n");
-//        System.out.println("Please input your data:");
-//
-//        // Name
-//        System.out.print("Enter your full name: ");
-//        String name = scanner.nextLine();
-//
-//        // Age
-//        System.out.print("Enter your age: ");
-//        int age = scanner.nextInt();
-//
-//        // Height
-//        System.out.print("Enter your height (in metres): ");
-//        double height = scanner.nextDouble();
-//
-//        // Height
-//        System.out.print("Enter your weight (in kilograms): ");
-//        double weight = scanner.nextDouble();
-//
-//        // Employment
-//        System.out.print("Are you employed?: ");
-//        boolean employed = scanner.nextBoolean();
-//        scanner.nextLine();
-//
-//        // Occupation
-//        System.out.print("What is your occupation?: ");
-//        String occupation = scanner.nextLine();
-//
-//        // Student
-//        System.out.print("Are you a student?: ");
-//        boolean isStudent = scanner.nextBoolean();
-//
-//        System.out.println("\nThank you, " + name + ", for providing your information!");
-//        System.out.println("Your Blummin monthly subscription is: £"
-//                + calculateSubscriptionCharge(age, height, weight, occupation, isStudent));
-//
+
+        System.out.println("\nThank you, " + hu.getName() + ", for providing your information!");
+        System.out.println("Your Blummin monthly subscription is: £"
+                + calculateSubscriptionCharge(hu.getAge(), hu.getHeightInMetres(), hu.getWeightInKG(), hu.getOccupation(), hu.getEmploymentStatus() == Employment.STUDENT));
+
         scanner.close();
     }
 

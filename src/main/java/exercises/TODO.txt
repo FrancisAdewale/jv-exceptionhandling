@@ -1,5 +1,0 @@
-tests for:
-    employment = false
-        student = true
-        student = false
-    employment = true when age < 16

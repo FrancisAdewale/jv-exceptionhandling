@@ -154,8 +154,10 @@ public class UserInterface {
     }
 
     private void revalidateAge() {
-//        System.out.println("Do you want to re-enter your age? (Y to continue, anything else to pass)");
-        if (scanner.nextLine().equals("Y")) {
+        scanner.nextLine();
+        System.out.println("Do you want to re-enter your age? (Y to continue, anything else to pass)");
+        String answer = scanner.nextLine();
+        if (answer.equalsIgnoreCase("y")) {
             promptUserForAge();
         }
     }
