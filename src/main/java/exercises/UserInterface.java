@@ -115,6 +115,7 @@ public class UserInterface {
                     continue;
                     }
                 this.weight = weight;
+                break;
                 } catch (InputMismatchException e) {
                 scanner.next();
                 System.out.println("Please input a valid weight");

@@ -1,1 +1,1 @@
-weight prompting in UserInterface does not work!!!!
+bugs in logical flow
