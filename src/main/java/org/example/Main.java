@@ -1,7 +1,5 @@
 package org.example;
-import exercises.Exercise1;
-import exercises.Exercise2;
-import exercises.Exercise3;
+import exercises.*;
 
 public class Main {
 
@@ -12,7 +10,6 @@ public class Main {
 //        System.out.println(Exercise1.divide(inputs[0], inputs[1]));
 
         Exercise3.divide();
-
 
     }
 

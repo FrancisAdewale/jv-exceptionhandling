@@ -16,7 +16,8 @@ public class Exercise2 {
                 System.out.print("Enter dividend: ");
                 int dividend = scanner.nextInt();
                 return new int[]{divisor, dividend};
-            } catch (InputMismatchException e) {
+            }
+            catch (InputMismatchException e) {
                 scanner.next();
                 System.out.println("Invalid input. Please try again.");
             }

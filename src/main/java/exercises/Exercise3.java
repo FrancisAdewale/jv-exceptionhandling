@@ -12,7 +12,9 @@ public class Exercise3 {
                 inputs = Exercise2.getUserInput();
                 System.out.println(Exercise1.divide(inputs[0],inputs[1]));
                 break;
-            } catch(ArithmeticException ae) {
+            } catch (NegativeIntegerException e) {
+                System.out.println("This operation does not accept negative values. Please try again.");
+            }catch(ArithmeticException ae) {
                 System.out.println("Cannot divide by zero");
 
             }
