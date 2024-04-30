@@ -1,4 +1,6 @@
 package org.example;
+import RestaurantManager.AddingNegativeIntegerException;
+import RestaurantManager.InventoryManager;
 import exercises.*;
 
 import java.util.Scanner;
@@ -14,8 +16,33 @@ public class Main {
 //        Exercise4.recursiveMethod();
 //          Exercise5.healthInsuranceDataInput();
 
-            Exercise5.healthInsuranceDataInput();
+//            Exercise5.healthInsuranceDataInput();
+
+        InventoryManager im = new InventoryManager();
+        try {
+            im.addItem("Cabbage", 1);
+        } catch (AddingNegativeIntegerException e) {
+            System.out.println(e.getErrorDetail());
+        }
+
+        try {
+            im.addItem("Potato", 0);
+        } catch (AddingNegativeIntegerException e) {
+            System.out.println(e.getErrorDetail());
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            im.addItem("Eggs", -1);
+        } catch (AddingNegativeIntegerException e) {
+            System.out.println(e.getErrorDetail());
+        }
+
+        System.out.println(im.getInventory());
     }
+
+
+
 
 }
 
